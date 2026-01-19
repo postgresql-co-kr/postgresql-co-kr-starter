@@ -188,11 +188,13 @@ Strategy for building and deploying modules in a monorepo.
 
 **1. Library Dependency (Default)**
 `modules/*` are built as **Libraries (Plain JAR)**. `apps/*` include them as dependencies, packaging everything into a single **Monolithic BootJAR**.
+
 * **Use Case**: Initial development, simple deployment, Modular Monolith.
 * **Config**: `bootJar { enabled = false }`, `jar { enabled = true }` in module's build.gradle.
 
 **2. Executable BootJAR (MSA Transition)**
 If a module (e.g., `modules/user`) needs to scale independently, it can be converted to an executable BootJAR.
+
 * **Use Case**: Separating independent microservices.
 * **Method**: Apply `org.springframework.boot` plugin and set `bootJar { enabled = true }`.
 
@@ -312,12 +314,15 @@ tasks.withType(JavaExec) {
 ## 4. Example Source Code
 
 #### A. Common Module Service (`HelloCore.java`)
+
 (Simple Service returning "Hello from Core Module!")
 
 #### B. API Application (`ApiApplication.java`)
+
 (Main class with `@SpringBootApplication`)
 
 #### C. Test Controller (`TestController.java`)
+
 Simple endpoint for verification.
 
 ```java
@@ -331,6 +336,7 @@ public class TestController {
 ```
 
 #### D. App Config (`application.yml`)
+
 Configured to use H2 database for local run without external infra.
 
 ---
@@ -338,12 +344,14 @@ Configured to use H2 database for local run without external infra.
 ## 5. IDE Setup & Debugging Guide
 
 ### 4.1 IntelliJ IDEA (Recommended)
+
 1. **Open**: Open `postgresql` folder.
 2. **Import**: Click 'Load Gradle Project'.
 3. **Run**: Run `ApiApplication.java`.
 4. **Debug**: Set breakpoints and run in debug mode.
 
 ### 4.2 VS Code
+
 1. **Extensions**: Install 'Extension Pack for Java' & 'Spring Boot Extension Pack'.
 2. **Open**: Open folder and wait for Java Projects initialization.
 3. **Run**: Run `ApiApplication` main method.
@@ -389,3 +397,13 @@ The current `apps/api/build.gradle` configuration is **"Well-engineered"**, not 
 * **Modularization**: Scalable architecture.
 
 This is the **modern Java backend standard** adopted by unicorn startups and leading enterprises for new projects.
+
+## 7. References
+
+* [Spring Boot 4.0.1](https://spring.io/blog/2025/10/01/spring-boot-4-0-1-is-available)
+* [Spring AI 2.0](https://spring.io/blog/2025/10/01/spring-ai-2-0-is-available)
+* [QueryDSL 5.1](https://querydsl.com/)
+* [MapStruct 1.6](https://mapstruct.org/)
+* [UUID v7](https://www.rfc-editor.org/rfc/rfc9562)
+* [AWS SDK v2](https://docs.aws.amazon.com/ko_kr/sdk-for-java/v2/developer-guide/welcome.html)
+  [postgresql.co.kr](https://postgresql.co.kr/)

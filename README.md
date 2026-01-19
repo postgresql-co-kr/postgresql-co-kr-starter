@@ -572,3 +572,13 @@ Q-Class(쿼리 타입 클래스)는 컴파일 시점에 생성됩니다.
 * **모듈화**: `apps`와 `libs` 분리로 확장성 확보
 
 이 구성은 유니콘 스타트업이나 대기업의 신규 프로젝트에서 채택하는 **가장 모던한 자바 백엔드 표준**입니다.
+
+## 7. 참고자료
+
+* [Spring Boot 4.0.1](https://spring.io/blog/2025/10/01/spring-boot-4-0-1-is-available)
+* [Spring AI 2.0](https://spring.io/blog/2025/10/01/spring-ai-2-0-is-available)
+* [QueryDSL 5.1](https://querydsl.com/)
+* [MapStruct 1.6](https://mapstruct.org/)
+* [UUID v7](https://www.rfc-editor.org/rfc/rfc9562)
+* [AWS SDK v2](https://docs.aws.amazon.com/ko_kr/sdk-for-java/v2/developer-guide/welcome.html)
+  [postgresql.co.kr](https://postgresql.co.kr/)

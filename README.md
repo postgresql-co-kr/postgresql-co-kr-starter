@@ -581,4 +581,4 @@ Q-Class(쿼리 타입 클래스)는 컴파일 시점에 생성됩니다.
 * [MapStruct 1.6](https://mapstruct.org/)
 * [UUID v7](https://www.rfc-editor.org/rfc/rfc9562)
 * [AWS SDK v2](https://docs.aws.amazon.com/ko_kr/sdk-for-java/v2/developer-guide/welcome.html)
-  [postgresql.co.kr](https://postgresql.co.kr/)
+* [postgresql.co.kr](https://postgresql.co.kr/)

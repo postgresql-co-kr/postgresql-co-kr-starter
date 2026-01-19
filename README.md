@@ -3,6 +3,8 @@
 이 프로젝트는 **postgresql.co.kr 커뮤니티**를 위한 **Modern Spring Boot 4 & Java 25** 기반의 백엔드 스타터 킷(Starter Kit)입니다.
 엔터프라이즈 환경에서 검증된 아키텍처와 최신 기술 스택을 미리 구성하여, 복잡한 설정 없이 비즈니스 로직 개발에 바로 집중할 수 있도록 설계되었습니다.
 
+[English](README.en.md)
+
 ---
 
 ## 1. 기술 스택 분석 (Why This Stack?)

@@ -1,0 +1,13 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    implementation project(':common:infra') // AI 처리, 알림 발송용
+
+    implementation 'org.springframework.boot:spring-boot-starter-web' // Health Check용
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootJar { enabled = true }
+jar { enabled = false }

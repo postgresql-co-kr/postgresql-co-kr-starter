@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        maven { url 'https://repo.spring.io/milestone' }
+        maven { url 'https://repo.spring.io/snapshot' }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'postgresql-co-kr-starter'
+
+// 1. Applications (Deployables)
+include 'apps:api'
+include 'apps:worker'
+
+// 2. Modules (Business Features)
+include 'modules:user'
+include 'modules:board'
+
+// 3. Common (Shared Support)
+include 'common:core'
+include 'common:infra'

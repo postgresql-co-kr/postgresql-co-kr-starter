@@ -1,0 +1,7 @@
+dependencies {
+    // 가장 기초적인 유틸리티만 포함 (의존성 최소화 원칙)
+    api 'com.fasterxml.jackson.core:jackson-databind'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    api 'com.github.f4b6a3:uuid-creator:6.0.0'
+    api 'org.springframework:spring-context'
+}

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: postgresql-api
+
+  # 로컬 개발 시 외부 인프라 자동 구성 제외 (실행 오류 방지)
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.springframework.ai.autoconfigure.vertexai.gemini.VertexAiGeminiAutoConfiguration
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+
+logging:
+  level:
+    root: INFO
+    kr.co.postgresql: DEBUG

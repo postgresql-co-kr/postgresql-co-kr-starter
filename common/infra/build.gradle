@@ -1,0 +1,16 @@
+dependencies {
+    api project(':common:core')
+
+    // Redis, S3, AI, FCM 등 기술 의존성 집약
+    api 'org.springframework.boot:spring-boot-starter-security'
+    api 'org.springframework.boot:spring-boot-starter-data-redis'
+    api platform('software.amazon.awssdk:bom:2.29.35')
+    api 'software.amazon.awssdk:s3'
+    api 'com.google.firebase:firebase-admin:9.2.0'
+    api 'org.springframework.ai:spring-ai-vertex-ai-gemini-spring-boot-starter'
+
+    // Auth Utils
+    api 'io.jsonwebtoken:jjwt-api:0.13.0'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.13.0'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.13.0'
+}
